@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels & Text-based inputs</title>
+</head>
+
+<body>
+    <!-- <form action="process.php"></form> -->
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <!-- if no type stated, by default - text -->
+            <!-- id connects it to the label; when clicked on label, focus on input -->
+            <input type="text" id="name">
+        </div>
+        <!-- <br><br> -->
+        <br>
+        <!-- preferably with CSS, not this br -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <!-- cmd + D => select next occurance & modify all; multiple cursor space preserve extension keeps upper/lower letters -->
+        </div>
+        <div>
+            <!-- input:submit -->
+            <!-- <input type="submit" value="Submit"> -->
+
+            <!-- button:submit -->
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
