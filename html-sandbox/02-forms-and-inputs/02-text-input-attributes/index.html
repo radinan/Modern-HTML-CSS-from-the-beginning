@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels & Text-input attributes</title>
+</head>
+
+<body>
+    <form action="process.php" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" name="name" minlength="3" maxlength="12" required>
+            <!-- name puts value as query param -->
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" name="email" value="test@abv.bg" required disabled>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" minlength="8" required>
+        </div>
+        <div>
+            <button type=" submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
