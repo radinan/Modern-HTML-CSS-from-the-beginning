@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG element</title>
+    <style>
+        .blob {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="300" height="300">
+        <circle cx="90" cy="100" r="80" fill="aqua" stroke="black" stroke-width="5" />
+        <text x="47" y="110" fill="black" font-size="40" font-family="Verdana">
+            SVG
+        </text>
+    </svg>
+    <br>
+    <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FF0066"
+            d="M42.1,-41.6C55.4,-28.7,67.7,-14.4,67.4,-0.3C67.1,13.7,54.1,27.4,40.8,39.1C27.4,50.7,13.7,60.2,-2.4,62.6C-18.5,65,-37,60.2,-47.1,48.6C-57.2,37,-59,18.5,-61.5,-2.5C-64,-23.4,-67.1,-46.8,-56.9,-59.7C-46.8,-72.5,-23.4,-74.9,-4.5,-70.4C14.4,-65.8,28.7,-54.5,42.1,-41.6Z"
+            transform="translate(100 100)" />
+    </svg>
+</body>
+
+</html>
