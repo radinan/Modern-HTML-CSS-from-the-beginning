@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        meter::-webkit-meter-even-less-good-value {
+            background-color: violet;
+        }
+
+        /* doesnt work */
+    </style>
+</head>
+
+<body>
+    <!-- Progress -->
+    <label for="file">File progress:</label>
+    <progress id="file" max="100" value="50">50%</progress>
+
+    <!-- Meter -->
+    <label for="fuel">Fuel:</label>
+    <meter id="fuel" value="30" min="0" max="100" low="30" high="90" optimal="80">50/100</meter>
+</body>
+
+</html>
