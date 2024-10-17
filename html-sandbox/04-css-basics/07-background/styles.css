@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    /* Important: */
+
+/* background color */
+    background-color: coral;
+
+/* background image */
+    background-image: url('./sharinganmeme.jpg');
+    background-repeat: no-repeat; /* repeat by default (only repeat if it's a texture)*/
+    background-size: 200px; 
+    background-size: cover;
+    background-position: 200px -500px;
+    background-position: center;
+
+    /* instead */
+    background: url('./sharinganmeme.jpg') no-repeat center/cover;
+
+    /* scrolling background */
+    background-attachment: fixed; /* should the image move with the scroll or stay fixed (in ex text gets out of container)*/
+
+/* linear gradient */
+    /* background: linear-gradient(to bottom, lightblue, darkblue);
+    background: linear-gradient(to left, lightblue, darkblue);
+    background: linear-gradient(to bottom left, lightblue, darkblue); */
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 2rem;
+}
