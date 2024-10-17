@@ -1,0 +1,31 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', 'sans-serif';
+    /* line-height: 30px; */
+    line-height: 2; /* m unit => multiplier of whatever the root html font size is */
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    /* font-size: 30px; regular size metric */
+    /* font-size: 3rem; multiplier of root html element font size */
+    font-size: x-large; /* multipliers of root html element*/
+    font-weight: 400; /* headings by default bold; in case bold == 700 */
+    font-style: normal;
+    font-variant: normal; /* small caps */
+
+    /* font: italic small-caps 700 26px Arial; */
+
+    text-transform: capitalize; /* lowercase, uppercase */
+    text-indent: 20px; 
+    letter-spacing: 2px;
+    word-spacing: 5px;
+
+    text-align: center; /* left, right */
+}
