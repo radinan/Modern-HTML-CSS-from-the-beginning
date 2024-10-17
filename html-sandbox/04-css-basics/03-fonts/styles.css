@@ -1,0 +1,26 @@
+/* <!-- fonts.google.com => fonts and names --> */
+
+/* 
+    system/web safe fonts  
+    -> included by default
+    Arial (sans-serif), Verdana(sans-serif), Times new roman (serif).... 
+*/
+
+/* 
+    web fonts
+    -> need to be installed (using a @font-face rule or service like Google Fonts)
+    in HTML -> <link>
+    in CSS  -> @import
+    
+
+*/
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+p {
+    font-weight: 400;
+}
+
+/* serif VS sans serif => serif is with edges, sans serif is more simplified */
