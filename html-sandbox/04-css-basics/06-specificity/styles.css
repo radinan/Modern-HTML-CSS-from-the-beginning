@@ -1,0 +1,28 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* in html code: <h1 style="color:yellowgreen" - has higher specificity than id*/
+
+/* id has higher specificity than class */
+#heading {
+    color: teal;
+}
+
+/* class has higher specificity than tag */
+.heading {
+    color: tan;
+}
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+} /* higher specificity in chronolg (h1 & h1) */
+
+/* !important = HIGHEST specificity (be careful!) */
+h1 {
+    color: plum !important;
+}
