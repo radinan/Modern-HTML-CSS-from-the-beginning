@@ -1,0 +1,27 @@
+/* Universal selector -> active for EVERY item */
+/* apply for everything */
+/* includes uncommented  golden basics */
+* {
+    /* border: red solid 5px; */
+
+    margin: 0;
+    padding: 0;
+
+    /* excludes margin & padding from the size (width, length) */
+    /* box-sizing: content-box;  */
+
+    /* includes margin & padding */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.box {
+    background-color: coral;
+    max-width: 400px;
+    margin: 20px;
+    padding: 200px;
+}
+
