@@ -1,0 +1,44 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.none-el {
+    /* gone and without a space for it */
+    /* used more often */
+    display: none;
+}
+
+.hidden-el {
+    /* hidden but the space is still there; the layout treats it as if it is there */
+    visibility: hidden;
+}
+
+/* 1 part */
+/* p {
+    display: inline;
+} */
+
+/* 2 lines */
+/* a {
+    display: block;
+} */
+
+a {
+    background-color: lightblue;
+    border: blue solid 1px;
+    padding: 10px;
+
+    /* only LR took action; if it's inline u can't add vertical margin but only horizontal */
+    margin: 20px 10px;
+    /* doesn't work for inline as well */
+    width: 200px;
+    /* doesn't work either */
+    height: 200px;
+
+    /* fixes it but they are on separate lines as blocks */
+    /* display: block; */
+
+    /* => 1 line; menu items, horizontal nav bars (inline block or flexbox)
+                good for buttons!!! */
+    display: inline-block;
+}
