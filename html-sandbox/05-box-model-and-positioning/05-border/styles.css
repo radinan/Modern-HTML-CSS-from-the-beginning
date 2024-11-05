@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.box {
+    max-width: 400px;
+    margin: 20px; /* outside the border */
+    padding: 20px; /* inside the border */
+    
+    /* Shorthand */
+    border: 2px solid black;
+
+    /* Same as above */
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: red; */
+}
+
+.box-1 {
+    border: none; /* clear the border */
+    border-top: solid blue 4px; /* add only border on top */
+    border-bottom: solid #ff0000 4px; 
+
+    /* without border width and style this doesn't do anything */
+    /* border-color: blue;  */
+}
+
+.box-2 {
+    border-radius: 10px; /* round corners */
+
+    /* Oval: */
+    /* border-radius: 50%; */
+}
+
+.box-3 {
+    border-top-left-radius: 10px; /* round only the top left corner */
+    border-bottom-right-radius: 10px;
+}
