@@ -1,0 +1,74 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lavender;
+    border: 1px solid black;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    /* doesn't do anything because it's default */
+    position: static;
+
+    /* can't use TRBL if it's static */
+    left: 30px;
+
+    /* NOT WORKING ON STATIC! */
+    z-index: 1000;
+}
+
+.box-2 {
+    position: relative;
+
+    /* can move it from the natural placement */
+    left: 30px;
+    top: 20px;
+}
+
+.box-3 {
+    /* taking out of the natural layer;
+    everything else is placed as if it's not even there  */
+    /* when u scroll down, the element doesn't move at all, as if it's glued on the monitor */
+    position: fixed;
+
+    /* set it on a certain position */
+    top: 0;
+
+    /* z-index: -2; */
+    z-index: 2;
+}
+
+.box-4 {
+    /* scrolls like a relative element but once u r past "top" it sticks and doesn't go away
+    good for navbars (also use fixed */
+    position: sticky;
+    top: 200px;
+}
+
+.box-5 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: blanchedalmond;
+
+    z-index: 1;
+}
+/* to position it absolute in box-5 the box-5 should be relative */
+.box-6 {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* spacing because of margin on .box  */
+
+    bottom: 20px;
+    right: 20px;
+}
+
+/*  the higher the number of Z index,
+    the closer to u */
