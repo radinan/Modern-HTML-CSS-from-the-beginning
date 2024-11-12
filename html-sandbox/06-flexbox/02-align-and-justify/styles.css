@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.flex-container {
+    background-color: lightblue;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    /* flex-start by default */
+    justify-content: center; /* flex-start, flex-end, center, space-around, space-between, space-evenly*/
+    /* flex-start by default */
+    align-items: center; /* flex-start, flex-end, center, stretch (not rn because of item's height), baseline */
+
+    flex-direction: column; /* justify is vertical, align is horizontal */
+}
+
+.flex-item {
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+.item-2 {
+    align-self: flex-end;
+}
+
+.item-3 {
+    align-self: flex-start;
+}
