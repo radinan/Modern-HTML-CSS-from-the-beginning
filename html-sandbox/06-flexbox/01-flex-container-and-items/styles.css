@@ -1,0 +1,21 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.flex-container {
+    background: #ccc;
+    display: flex; /* put them in a row */
+    /*flex-direction: column-reverse;*/ /* row by default */
+    flex-direction: row;
+    flex-wrap: wrap; /* follow flex-item's width instead of scrunching it */
+    gap: 10px; /* space between boxes */
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+}
+
+.flex-item {
+    height: 200px;
+    width: 200px;
+    background: coral;
+    border: 1px solid black;
+}
