@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.flex-container {
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.flex-item {
+    background-color: coral;
+    border: 1px solid black;
+    padding: 20px;
+    /* width: 200px; */
+
+    /* G S B */
+    /* flex: 1 0 50px; */
+    /* flex: 1 0 0; */
+    flex: 1;
+    /* if B is 0 -> grow & shrink normally as much as the layout allows */
+    /* flex 1 = content areas - same size, shrink/grow the same */
+}
+
+/* flex shrink -> how much an item will shrink relative to the other items */
+
+.item-1 {
+    /* without width */
+
+    /* flex-shrink: 0;  */
+    /* 0 = not shrinking at all */
+    /* 1 = normal */
+    /* 2 = shrink twice as fast */
+
+    /* flex-grow: 1; */
+}
+
+.item-1,
+.item-2 {
+    /* flex-grow: 1; */
+}
+
+.item-3 {
+    /* flex-grow: 2; */
+
+    /* set space before it's distributed amongst elements */
+    /* flex-basis: 200px;  */
+}
