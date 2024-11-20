@@ -1,0 +1,53 @@
+/* BY DEFAULT the root element: */
+html {
+    font-size: 16px;
+    /* font-size: 62.5%; = 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+/* REM = (relative to ROOT)
+        multiplier of the "html" value 
+ */
+/* EM =  (relative to PARENT)
+        multiplier of the ".container" value <if any, else upper>
+ */
+p {
+    /* 16 times 1*/
+    font-size: 1rem;
+
+    /* 20 times 2 */
+    /* font-size: 2em;  */
+
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 0.3rem 0;
+}
+
+ul {
+    /* all are 1.5rem */
+    font-size: 1.5rem;
+
+    /* 2 different font sizes */
+    /* font-size: 1.5em; */
+}
+
