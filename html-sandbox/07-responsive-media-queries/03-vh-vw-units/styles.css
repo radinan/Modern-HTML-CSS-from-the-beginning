@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Viewport = window */
+/* VH = viewport height */
+/* VW = viewport width (rarely used) */
+
+/* HOWEVER once u scroll, the coral is over :) */
+.container {
+    background-color: coral;
+
+    /* orange only till the end of the text */
+    /* 100% of the size of container */
+    height: 100%; 
+
+    /* 100% of the whole window */
+    height: 100vh;
+    /* width: 50vw; */
+}
+
+.container h1 {
+    /* the bigger the window, the bigger the text (uncommon for paragraphs & in general) */
+    font-size: 7vw;
+}
