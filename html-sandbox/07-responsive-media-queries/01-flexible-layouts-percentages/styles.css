@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* don't automatically n-o-t overflow the container */
+img {
+    max-width: 100%;
+    /* 100% of it's container */
+}
+
+.container {
+    /* if the browser is smaller, the text gets cut off */
+    /* width: 1100px; */
+
+    /* good but issue: too much space on small screens: */
+    /* width: 80%; */
+    max-width: 1100px;
+    /* or both combined :) */
+
+    margin: 15% auto;
+    padding: 20px;
+}
+
+
+/* 
+DO NOT USE PERCENTAGES AS UNITS WHEN:
+- fixed sized elements
+- font sizes (em, rem)
+- precise positioning
+- nested percentage values
+*/
