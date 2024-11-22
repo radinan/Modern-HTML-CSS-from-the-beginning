@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Typical breakpoints:
+    567px - Smartphones
+    768px - Tablets
+    992px - Desktop
+    1024px - Landscape
+    1200px - Desktop/Widescreen
+*/
+
+@media screen and (max-width: 1024px) {
+    .widescreen {
+        background-color: coral;
+    }
+}
+
+@media (max-width: 992px) {
+    .normal {
+        background-color: lightblue;
+    }
+}
+
+@media (max-width: 768px) {
+    .tablet {
+        background-color: lightgreen;
+    }
+}
+/* usually 768 is the breaking point; everything below that has a simillar layout */
+
+@media (max-width: 576px) {
+    .smartphone {
+        background-color: lightpink;
+    }
+}
+
+@media (orientation: landscape) {
+    .landscape {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media (max-height: 500px) {
+    .height {
+        background-color: lightseagreen;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: #333;
+    }
+}
+
+/* 
+    Mobile first
+    <min-width>
+
+    Desktop first (initially create the app for desktop & then @media for additional devices) 
+    <max-width>
+*/
