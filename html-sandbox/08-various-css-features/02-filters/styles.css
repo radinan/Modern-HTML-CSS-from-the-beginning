@@ -1,0 +1,34 @@
+.container {
+    max-width: 900px;
+    margin: 70px auto;
+}
+
+img {
+    max-width: 100%;
+    /* only for chrome: */
+    /* -webkit-filter: grayscale(100%); */
+
+    /* only for mozila: */
+    /* -moz-filter: grayscale(100%); */
+
+    /* -o-filter: grayscale(100%) */
+    /* -ms-filter: grayscale(100%) */
+
+    /* for all browsers :) */
+    /* filter: grayscale(90%); */
+    /* filter: blur(5px); */
+    /* filter: brightness(50%); */
+    /* filter: contrast(50%); */
+    /* filter: drop-shadow(10px 10px 2px red); */
+    /* filter: hue-rotate(100deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(50%); */
+    /* filter: saturate(200%); */
+    /* filter: sepia(100%) */
+
+    /* chain filters */
+    filter: grayscale(50%) blur(3px);
+
+    /* reset */
+    filter: none;
+}
